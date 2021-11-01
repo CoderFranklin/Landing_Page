@@ -1,32 +1,53 @@
-#welcome{
+#welcome {
     display: flex;
     grid-template-columns: 350px;
     width: 100%;
     height: 100vh;
-    
-    .welcome-menu{
+
+    .welcome-menu {
         background: white;
         padding: 50px;
-        .logo{
+        .logo {
             display: flex;
             justify-content: center;
             margin-bottom: 50px;
-            img{
+            img {
                 max-width: 150px;
-                
+
             }
         }
-        .menu-title{
-            color: blue;
-            font-weight: 700;
-            font-size: 1.2rem;
-            border-bottom: 1px solid #e2eaef;
-            padding-bottom: 20px;
-            margin-bottom: 20px;
+        .menu {
+            .menu-title {
+                text-transform: uppercase;
+                color: blue;
+                font-weight: 700;
+                font-size: 1.2rem;
+                border-bottom: 1px solid #e2eaef;
+                padding-bottom: 20px;
+                margin-bottom: 20px;
+            }
+            .links{
+                li{
+                    a{
+                        font-size: 1.1rem;
+                        color: black;
+                        font-weight: 700;
+                        text-decoration: none;
+                        margin-bottom: 1.4rem;
+                        display: block;
+                        transition: color .3s ease-in-out;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                }
+            }
         }
     }
-    .welcome-jumbo{
+    
+        .welcome-jumbo{
         background: red;
         width: 100%;
-    }
+        }
+        
 }
