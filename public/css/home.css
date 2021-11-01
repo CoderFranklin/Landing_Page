@@ -1,1 +1,1 @@
-#welcome{display:-ms-flexbox;display:flex}#welcome .welcome-menu{background:white}#welcome .welcome-jumbo{background:red}
+#welcome{display:-ms-flexbox;display:flex;-ms-grid-columns:350px;grid-template-columns:350px;width:100%}#welcome .welcome-menu{background:white;width:300px}#welcome .welcome-jumbo{background:red;width:100%}
