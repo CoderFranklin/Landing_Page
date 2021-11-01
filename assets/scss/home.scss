@@ -10,10 +10,19 @@
         .logo{
             display: flex;
             justify-content: center;
+            margin-bottom: 50px;
             img{
                 max-width: 150px;
                 
             }
+        }
+        .menu-title{
+            color: blue;
+            font-weight: 700;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #e2eaef;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
         }
     }
     .welcome-jumbo{
