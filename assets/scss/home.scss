@@ -1,14 +1,12 @@
 #welcome {
     display: flex;
     grid-template-columns: 350px;
-    height: 100vh;
-    
+    //height: 100vh;   
 
     .welcome-menu {
         background: white;
         padding: 50px;
-        position: relative;
-        
+        position: relative;       
         
         .logo {
             display: flex;
@@ -64,6 +62,8 @@
             }
         }
         .location{
+            display: flex;
+            flex-direction: column;
             align-self: center;
             position:absolute;
             bottom: 0;
@@ -83,9 +83,15 @@
     }
     
     .welcome-jumbo{
+        
     display: flex;
-    background: red;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    //max-width: 100%;
+    background: #1e5799; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #1e5799 0%, #2989d8 50%, #7db9e8 68%, #7db9e8 68%, #207cca 100%, #3ea0f7 101%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #1e5799 0%,#2989d8 50%,#7db9e8 68%,#7db9e8 68%,#207cca 100%,#3ea0f7 101%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #1e5799 0%,#2989d8 50%,#7db9e8 68%,#7db9e8 68%,#207cca 100%,#3ea0f7 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     
     
     }        
