@@ -64,11 +64,11 @@
             }
         }
         .location{
-            align-self: flex-end;
+            align-self: center;
             position:absolute;
+            bottom: 0;
             .address{
                 color: #7a8d99;
-                font-size: 18px;
                 margin-bottom: 20px;
             }
             .phone-number{
