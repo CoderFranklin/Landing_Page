@@ -209,17 +209,32 @@
         display: inline-block;
         padding: 15px;
         border-radius: 30px;
+        margin-bottom: 200px;
 
     }
 .food-silder {
     width: 100%;
-    max-width: 1200px;
-    
+    max-width: 1400px; 
+    display: flex;
     .slide {
         width: 20%;
         position: relative;
         height: 500px;
-        
+        cursor: pointer;
+        &:hover{
+            .background{
+                background: #6d0019;
+                transform: translate3d(0, -100px, 0);
+            }
+            .content{
+                .food-title{
+                    color: white;
+                }
+                .food-description{
+                    color: white;
+                }                     
+        }
+    }
     .background {
         background: white;
         top: 0;
@@ -228,6 +243,7 @@
         width: 100%;
         z-index: 1;
         position: absolute;
+        transition: all .3s eas-in-out;
     }
     .content{
         z-index: 2;
@@ -242,6 +258,7 @@
             font-size: 2rem;
             font-weight: 900;
             margin-bottom: 3rem;
+            //transition: all .3s eas-in-out;
         }
         .food-description{
             font-size: 1rem;
