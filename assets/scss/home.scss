@@ -213,14 +213,39 @@
         margin-bottom: 130px;
 
     }
+    .container{
+        width: 100%;
+        max-width: 1400px;
+        position: absolute;
+        .left-btn, .right-btn{
+            background: #6d0019;
+            color: white;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            top: 50%;
+            display: inline-block;
+            z-index: 5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left-btn{
+            left: 0;
+        }
+        .right-btn{
+            right: 0;
+        }
+    }
 .food-silder {
     width: 100%;
-    max-width: 1400px; 
+    //max-width: 1400px; 
     //display: flex;
-    margin-bottom: 2rem;
+    //@warn: 2rem;
     font-size: 0;
     white-space:nowrap;
-    overflow: auto;
+    transform: translate3d(-10%, 0, 0);
+    overflow-x: hidden;
     overflow-y: hidden;
     .slide {
         width: 20%;
