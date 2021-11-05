@@ -217,13 +217,14 @@
         width: 100%;
         max-width: 1400px;
         position: absolute;
+        //overflow: hidden;
         .left-btn, .right-btn{
             background: #6d0019;
             color: white;
             height: 50px;
             width: 50px;
             position: absolute;
-            top: 50%;
+            top: calc(50% - 25px);
             display: inline-block;
             z-index: 5;
             display: flex;
@@ -231,10 +232,11 @@
             align-items: center;
         }
         .left-btn{
-            left: 0;
+            left: -25px;
+            
         }
         .right-btn{
-            right: 0;
+            right: 25px;
         }
     }
 .food-silder {
@@ -244,7 +246,7 @@
     //@warn: 2rem;
     font-size: 0;
     white-space:nowrap;
-    transform: translate3d(-10%, 0, 0);
+    transform: translate3d(0%, 0, 0);
     overflow-x: hidden;
     overflow-y: hidden;
     .slide {
